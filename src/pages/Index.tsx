@@ -1,12 +1,46 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import HeroSection from "@/components/HeroSection";
+import ProblemPromiseSection from "@/components/ProblemPromiseSection";
+import ValueBlocksSection from "@/components/ValueBlocksSection";
+import HowItWorksSection from "@/components/HowItWorksSection";
+import TechSpecsSection from "@/components/TechSpecsSection";
+import CaseStudiesSection from "@/components/CaseStudiesSection";
+import PricingSection from "@/components/PricingSection";
+import IntegrationsSection from "@/components/IntegrationsSection";
+import FAQSection from "@/components/FAQSection";
+import FinalCTASection from "@/components/FinalCTASection";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <HeroSection />
+      
+      {/* Problem → Promise */}
+      <ProblemPromiseSection />
+      
+      {/* Core Value Blocks */}
+      <ValueBlocksSection />
+      
+      {/* How It Works */}
+      <HowItWorksSection />
+      
+      {/* Tech Specs */}
+      <TechSpecsSection />
+      
+      {/* Case Studies */}
+      <CaseStudiesSection />
+      
+      {/* Pricing */}
+      <PricingSection />
+      
+      {/* Integrations */}
+      <IntegrationsSection />
+      
+      {/* FAQ */}
+      <FAQSection />
+      
+      {/* Final CTA */}
+      <FinalCTASection />
     </div>
   );
 };

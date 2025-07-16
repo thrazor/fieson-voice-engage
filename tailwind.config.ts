@@ -18,7 +18,15 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'inter': ['Inter', 'sans-serif'],
+				'space-grotesk': ['Space Grotesk', 'sans-serif'],
+			},
 			colors: {
+				'midnight-blue': 'hsl(var(--midnight-blue))',
+				'electric-teal': 'hsl(var(--electric-teal))',
+				'electric-teal-light': 'hsl(var(--electric-teal-light))',
+				'electric-teal-dark': 'hsl(var(--electric-teal-dark))',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
