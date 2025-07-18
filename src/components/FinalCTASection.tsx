@@ -43,7 +43,7 @@ const FinalCTASection = () => {
               className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-10 py-4 h-auto font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5"
             >
               <Phone className="w-5 h-5 mr-2" />
-              Start free trial
+              Get started today
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
             <Button 
@@ -56,7 +56,7 @@ const FinalCTASection = () => {
 
           {/* Trust Statement */}
           <p className="text-white/70 text-sm">
-            14-day free trial • No credit card required • Setup in 15 minutes
+            Enterprise-grade AI • Trusted by 500+ brands • Setup in 15 minutes
           </p>
         </div>
       </div>

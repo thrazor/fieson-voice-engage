@@ -2,10 +2,10 @@ import { Button } from "@/components/ui/button";
 import { Check, Star, Zap } from "lucide-react";
 
 const PricingSection = () => {
-  const pricingTiers = [
+const pricingTiers = [
     {
       name: "Start",
-      price: "€49",
+      price: "€99",
       period: "/month",
       includedMins: "600",
       extraMinPrice: "€0.07",
@@ -24,7 +24,7 @@ const PricingSection = () => {
     },
     {
       name: "Growth",
-      price: "€179",
+      price: "€349",
       period: "/month",
       includedMins: "3,000",
       extraMinPrice: "€0.05",
@@ -41,9 +41,9 @@ const PricingSection = () => {
     },
     {
       name: "Scale",
-      price: "Custom",
-      period: "pricing",
-      includedMins: "Custom",
+      price: "€1,099",
+      period: "/month",
+      includedMins: "10,000",
       extraMinPrice: "€0.04",
       features: [
         "Dedicated cluster",
@@ -129,7 +129,7 @@ const PricingSection = () => {
                   className={`w-full ${tier.popular ? 'btn-primary' : 'btn-outline'}`}
                   size="lg"
                 >
-                  {tier.name === 'Scale' ? 'Contact Sales' : 'Start free trial'}
+                  {tier.name === 'Scale' ? 'Contact Sales' : 'Get Started'}
                 </Button>
               </div>
             </div>
@@ -141,10 +141,10 @@ const PricingSection = () => {
           <div className="bg-card p-8 rounded-xl shadow-card max-w-2xl mx-auto">
             <Zap className="w-12 h-12 text-accent mx-auto mb-4" />
             <h3 className="text-xl font-bold font-space-grotesk text-primary mb-3">
-              14-day free trial, no credit card required
+              Enterprise-grade voice AI for modern commerce
             </h3>
             <p className="text-muted-foreground">
-              Test Fieson with real customer calls. See results before you commit.
+              Join hundreds of businesses using Fieson to increase sales and reduce costs.
             </p>
           </div>
         </div>
