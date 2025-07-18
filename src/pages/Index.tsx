@@ -16,31 +16,49 @@ const Index = () => {
       <HeroSection />
       
       {/* Problem → Promise */}
-      <ProblemPromiseSection />
+      <div className="section-white">
+        <ProblemPromiseSection />
+      </div>
       
       {/* Core Value Blocks */}
-      <ValueBlocksSection />
+      <div className="section-gray">
+        <ValueBlocksSection />
+      </div>
       
       {/* How It Works */}
-      <HowItWorksSection />
+      <div className="section-white">
+        <HowItWorksSection />
+      </div>
       
       {/* Tech Specs */}
-      <TechSpecsSection />
+      <div className="section-gray">
+        <TechSpecsSection />
+      </div>
       
       {/* Case Studies */}
-      <CaseStudiesSection />
+      <div className="section-white">
+        <CaseStudiesSection />
+      </div>
       
       {/* Pricing */}
-      <PricingSection />
+      <div className="section-gray">
+        <PricingSection />
+      </div>
       
       {/* Integrations */}
-      <IntegrationsSection />
+      <div className="section-white">
+        <IntegrationsSection />
+      </div>
       
       {/* FAQ */}
-      <FAQSection />
+      <div className="section-gray">
+        <FAQSection />
+      </div>
       
       {/* Final CTA */}
-      <FinalCTASection />
+      <div className="section-dark">
+        <FinalCTASection />
+      </div>
     </div>
   );
 };

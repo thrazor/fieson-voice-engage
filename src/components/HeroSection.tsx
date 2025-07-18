@@ -14,13 +14,13 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto text-center text-white">
           {/* Trust Indicator */}
           <div className="flex items-center justify-center gap-2 mb-6">
-            <PhoneCall className="w-5 h-5 text-accent" />
-            <span className="text-accent font-medium">AI-Powered Voice Commerce</span>
+            <PhoneCall className="w-5 h-5 text-brand-teal" />
+            <span className="text-brand-teal font-medium">AI-Powered Voice Commerce</span>
           </div>
 
           {/* Main Headline */}
           <h1 className="text-5xl md:text-7xl font-bold font-space-grotesk mb-6 leading-tight">
-            Recover <span className="text-accent">30%</span> more sales with real-time Voice AI
+            Recover <span className="text-brand-teal">30%</span> more sales with real-time Voice AI
           </h1>
 
           {/* Subheadline */}

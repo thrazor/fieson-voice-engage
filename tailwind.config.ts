@@ -23,14 +23,35 @@ export default {
 				'space-grotesk': ['Space Grotesk', 'sans-serif'],
 			},
 			colors: {
-				'midnight-blue': 'hsl(var(--midnight-blue))',
-				'electric-teal': 'hsl(var(--electric-teal))',
-				'electric-teal-light': 'hsl(var(--electric-teal-light))',
-				'electric-teal-dark': 'hsl(var(--electric-teal-dark))',
+				// Linear-inspired grays
+				'gray': {
+					50: 'hsl(var(--gray-50))',
+					100: 'hsl(var(--gray-100))',
+					200: 'hsl(var(--gray-200))',
+					300: 'hsl(var(--gray-300))',
+					400: 'hsl(var(--gray-400))',
+					500: 'hsl(var(--gray-500))',
+					600: 'hsl(var(--gray-600))',
+					700: 'hsl(var(--gray-700))',
+					800: 'hsl(var(--gray-800))',
+					900: 'hsl(var(--gray-900))',
+					950: 'hsl(var(--gray-950))',
+				},
+				// Brand colors
+				'brand-purple': 'hsl(var(--brand-purple))',
+				'brand-purple-light': 'hsl(var(--brand-purple-light))',
+				'brand-purple-dark': 'hsl(var(--brand-purple-dark))',
+				'brand-teal': 'hsl(var(--brand-teal))',
+				'brand-teal-light': 'hsl(var(--brand-teal-light))',
+				'brand-teal-dark': 'hsl(var(--brand-teal-dark))',
+				// Design system
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
-				background: 'hsl(var(--background))',
+				background: {
+					DEFAULT: 'hsl(var(--background))',
+					alt: 'hsl(var(--background-alt))'
+				},
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
