@@ -37,13 +37,13 @@ export default {
 					900: 'hsl(var(--gray-900))',
 					950: 'hsl(var(--gray-950))',
 				},
-				// Brand colors
-				'brand-purple': 'hsl(var(--brand-purple))',
-				'brand-purple-light': 'hsl(var(--brand-purple-light))',
-				'brand-purple-dark': 'hsl(var(--brand-purple-dark))',
-				'brand-teal': 'hsl(var(--brand-teal))',
-				'brand-teal-light': 'hsl(var(--brand-teal-light))',
-				'brand-teal-dark': 'hsl(var(--brand-teal-dark))',
+				// Modern brand colors
+				'brand-primary': 'hsl(var(--brand-primary))',
+				'brand-primary-light': 'hsl(var(--brand-primary-light))',
+				'brand-primary-dark': 'hsl(var(--brand-primary-dark))',
+				'brand-accent': 'hsl(var(--brand-accent))',
+				'brand-accent-light': 'hsl(var(--brand-accent-light))',
+				'brand-accent-dark': 'hsl(var(--brand-accent-dark))',
 				// Design system
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',

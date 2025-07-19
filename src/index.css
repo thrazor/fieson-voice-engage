@@ -8,70 +8,71 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Linear-inspired Colors with Consumer Touch - HSL Format */
-    --gray-50: 220 20% 98%;
-    --gray-100: 220 15% 95%;
-    --gray-200: 220 12% 88%;
-    --gray-300: 220 9% 75%;
-    --gray-400: 220 8% 60%;
-    --gray-500: 220 8% 46%;
-    --gray-600: 220 12% 35%;
-    --gray-700: 220 15% 25%;
-    --gray-800: 220 20% 14%;
-    --gray-900: 220 25% 8%;
-    --gray-950: 220 30% 4%;
+    /* Ultra-precise Grays (Vercel-inspired) */
+    --gray-50: 0 0% 98%;
+    --gray-100: 0 0% 96%;
+    --gray-200: 0 0% 90%;
+    --gray-300: 0 0% 83%;
+    --gray-400: 0 0% 64%;
+    --gray-500: 0 0% 45%;
+    --gray-600: 0 0% 32%;
+    --gray-700: 0 0% 25%;
+    --gray-800: 0 0% 15%;
+    --gray-900: 0 0% 9%;
+    --gray-950: 0 0% 4%;
     
-    /* Brand Colors */
-    --brand-purple: 265 85% 58%; /* Linear-inspired purple */
-    --brand-purple-light: 265 85% 90%;
-    --brand-purple-dark: 265 85% 45%;
-    --brand-teal: 174 85% 45%; /* Refined teal */
-    --brand-teal-light: 174 85% 85%;
-    --brand-teal-dark: 174 85% 35%;
+    /* Modern Brand Colors (Stripe-inspired) */
+    --brand-primary: 239 84% 67%; /* Vibrant indigo */
+    --brand-primary-light: 244 89% 80%;
+    --brand-primary-dark: 224 76% 48%;
+    --brand-accent: 320 91% 60%; /* Pink accent */
+    --brand-accent-light: 327 87% 82%;
+    --brand-accent-dark: 314 98% 40%;
     
     /* Design System Colors - Light Mode */
     --background: 0 0% 100%; /* Pure white sections */
-    --background-alt: 220 20% 98%; /* Very light gray sections */
-    --foreground: 220 25% 8%;
+    --background-alt: 0 0% 98%; /* Clean light gray sections */
+    --foreground: 0 0% 9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 25% 8%;
+    --card-foreground: 0 0% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 25% 8%;
+    --popover-foreground: 0 0% 9%;
 
-    --primary: 265 85% 58%; /* Purple primary */
+    --primary: 239 84% 67%; /* Vibrant indigo primary */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 15% 95%; /* Light gray */
-    --secondary-foreground: 220 25% 8%;
+    --secondary: 0 0% 96%; /* Clean gray */
+    --secondary-foreground: 0 0% 15%;
 
-    --muted: 220 15% 95%;
-    --muted-foreground: 220 8% 46%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 174 85% 45%; /* Teal accent */
+    --accent: 320 91% 60%; /* Pink accent */
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 75% 55%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 12% 88%;
-    --input: 220 12% 88%;
-    --ring: 265 85% 58%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 239 84% 67%;
 
     --radius: 0.5rem;
 
-    /* Gradients - Linear Style */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--gray-900)) 0%, hsl(var(--gray-800)) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(var(--gray-950)) 0%, hsl(var(--gray-900)) 70%, hsl(var(--gray-800)) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--brand-purple-light)));
-    --gradient-mesh: conic-gradient(from 180deg at 50% 50%, hsl(var(--primary) / 0.1) 0deg, hsl(var(--accent) / 0.1) 120deg, hsl(var(--primary) / 0.1) 240deg, hsl(var(--accent) / 0.1) 360deg);
+    /* Gradients - Stripe-inspired */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--brand-primary)) 0%, hsl(var(--brand-accent)) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(var(--brand-primary)) 0%, hsl(var(--brand-accent)) 40%, hsl(var(--brand-primary-light)) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(var(--brand-accent)) 0%, hsl(var(--brand-accent-light)) 100%);
+    --gradient-mesh: conic-gradient(from 180deg at 50% 50%, hsl(var(--brand-primary) / 0.1) 0deg, hsl(var(--brand-accent) / 0.1) 120deg, hsl(var(--brand-primary) / 0.1) 240deg, hsl(var(--brand-accent) / 0.1) 360deg);
 
-    /* Shadows - Subtle Linear Style */
-    --shadow-elegant: 0 1px 3px 0 hsl(var(--gray-900) / 0.1), 0 1px 2px -1px hsl(var(--gray-900) / 0.1);
-    --shadow-glow: 0 0 0 1px hsl(var(--primary) / 0.05), 0 4px 16px -4px hsl(var(--primary) / 0.1);
-    --shadow-card: 0 1px 3px 0 hsl(var(--gray-900) / 0.1), 0 1px 2px -1px hsl(var(--gray-900) / 0.1);
-    --shadow-button: 0 1px 2px 0 hsl(var(--gray-900) / 0.05);
+    /* Shadows - Clean and Modern */
+    --shadow-elegant: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    --shadow-glow: 0 0 0 1px hsl(var(--brand-primary) / 0.06), 0 8px 24px -4px hsl(var(--brand-primary) / 0.15);
+    --shadow-card: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    --shadow-button: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-premium: 0 10px 40px -10px rgba(0, 0, 0, 0.15);
 
     /* Animations */
     --transition-smooth: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -79,44 +80,44 @@ All colors MUST be HSL.
   }
 
   .dark {
-    /* Dark Mode - Linear Style */
-    --background: 220 30% 4%;
-    --background-alt: 220 25% 8%;
-    --foreground: 220 20% 95%;
+    /* Dark Mode - Modern High Contrast */
+    --background: 0 0% 4%;
+    --background-alt: 0 0% 9%;
+    --foreground: 0 0% 98%;
 
-    --card: 220 25% 8%;
-    --card-foreground: 220 20% 95%;
+    --card: 0 0% 9%;
+    --card-foreground: 0 0% 90%;
 
-    --popover: 220 25% 8%;
-    --popover-foreground: 220 20% 95%;
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 265 85% 58%;
-    --primary-foreground: 220 30% 4%;
+    --primary: 244 89% 80%;
+    --primary-foreground: 0 0% 4%;
 
-    --secondary: 220 15% 25%;
-    --secondary-foreground: 220 20% 95%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 220 15% 25%;
-    --muted-foreground: 220 8% 60%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 64%;
 
-    --accent: 174 85% 45%;
-    --accent-foreground: 220 30% 4%;
+    --accent: 327 87% 82%;
+    --accent-foreground: 0 0% 4%;
 
-    --destructive: 0 75% 55%;
-    --destructive-foreground: 220 20% 95%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 220 15% 25%;
-    --input: 220 15% 25%;
-    --ring: 265 85% 58%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 244 89% 80%;
     
-    --sidebar-background: 220 30% 4%;
-    --sidebar-foreground: 220 20% 95%;
-    --sidebar-primary: 265 85% 58%;
-    --sidebar-primary-foreground: 220 30% 4%;
-    --sidebar-accent: 220 15% 25%;
-    --sidebar-accent-foreground: 220 20% 95%;
-    --sidebar-border: 220 15% 25%;
-    --sidebar-ring: 265 85% 58%;
+    --sidebar-background: 0 0% 4%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 244 89% 80%;
+    --sidebar-primary-foreground: 0 0% 4%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 244 89% 80%;
   }
 }
 
@@ -144,9 +145,9 @@ All colors MUST be HSL.
 }
 
 @layer components {
-  /* Button Variants - Linear Style */
+  /* Button Variants - Modern High-Converting */
   .btn-primary {
-    @apply bg-primary text-primary-foreground hover:bg-[hsl(var(--brand-purple-dark))] transition-smooth px-6 py-2.5 rounded-md font-medium shadow-button hover:shadow-glow;
+    @apply bg-primary text-primary-foreground hover:bg-[hsl(var(--brand-primary-dark))] transition-smooth px-6 py-2.5 rounded-md font-medium shadow-button hover:shadow-glow;
   }
 
   .btn-secondary {
