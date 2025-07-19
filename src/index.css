@@ -200,6 +200,10 @@ All colors MUST be HSL.
     box-shadow: var(--shadow-card);
   }
 
+  .shadow-button {
+    box-shadow: var(--shadow-button);
+  }
+
   /* Animation Classes */
   .transition-smooth {
     transition: var(--transition-smooth);
