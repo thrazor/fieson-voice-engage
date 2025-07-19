@@ -5,56 +5,55 @@ const PricingSection = () => {
 const pricingTiers = [
     {
       name: "Start",
-      price: "€99",
-      period: "/month",
-      includedMins: "600",
-      extraMinPrice: "€0.07",
+      description: "Automate basic calls with AI",
+      price: "$99",
+      period: "/mo",
+      includedMins: "250",
+      extraMinPrice: "$0.36/min",
       features: [
-        "No-code flow builder",
-        "Email support",
-        "Basic analytics",
-        "Cart recovery calls",
-        "GDPR compliance"
-      ],
-      limitations: [
-        "Standard voice quality",
-        "Email support only"
-      ],
-      popular: false
-    },
-    {
-      name: "Growth",
-      price: "€349",
-      period: "/month",
-      includedMins: "3,000",
-      extraMinPrice: "€0.05",
-      features: [
-        "WhatsApp voice integration",
-        "A/B discount engine",
-        "Advanced analytics",
-        "Priority support",
-        "Custom voice training",
-        "Multi-language support"
+        "Automate phone calls with Seth",
+        "Basic chat support",
+        "14-day no-risk trial. Cancel anytime."
       ],
       limitations: [],
-      popular: true
+      popular: false,
+      cta: "Start trial - $0 today"
+    },
+    {
+      name: "Grow",
+      description: "Powerful AI phone support built for your online store",
+      price: "$349",
+      period: "/mo",
+      includedMins: "1000",
+      extraMinPrice: "$0.19/min",
+      features: [
+        "Start plan features, plus:",
+        "Seth keeps getting smarter",
+        "Call insights", 
+        "30-day priority onboarding",
+        "14-day no-risk trial. Cancel anytime."
+      ],
+      limitations: [],
+      popular: true,
+      cta: "Start trial - $0 today"
     },
     {
       name: "Scale",
-      price: "€1,099",
-      period: "/month",
-      includedMins: "10,000",
-      extraMinPrice: "€0.04",
+      description: "White-glove setup, custom integrations, volume discount",
+      price: "$4,000",
+      setupFee: "setup",
+      period: "+ $1099/mo",
+      includedMins: "Custom",
+      extraMinPrice: "Custom price/min",
       features: [
-        "Dedicated cluster",
-        "SOC 2 compliance report",
-        "Custom integrations",
-        "Dedicated account manager",
-        "SLA guarantees",
-        "Advanced security features"
+        "Grow plan features, plus:",
+        "Custom agent and integrations",
+        "Monthly recommendations",
+        "Private Slack channel"
       ],
       limitations: [],
-      popular: false
+      popular: false,
+      cta: "Contact sales"
     }
   ];
 
@@ -63,10 +62,10 @@ const pricingTiers = [
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold font-space-grotesk text-primary mb-6">
-            Transparent pricing, no surprises
+            Less than one agent's salary.<br />But you get an entire phone team.
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Choose the plan that fits your call volume. Upgrade or downgrade anytime.
+            Choose the plan that fits your business needs. All plans include our AI phone agent.
           </p>
         </div>
 
@@ -92,18 +91,21 @@ const pricingTiers = [
                 <h3 className="text-2xl font-bold font-space-grotesk text-primary mb-2">
                   {tier.name}
                 </h3>
+                
+                {/* Description */}
+                <p className="text-sm text-muted-foreground mb-6">
+                  {tier.description}
+                </p>
 
                 {/* Price */}
                 <div className="mb-6">
                   <div className="flex items-baseline gap-1 mb-2">
                     <span className="text-4xl font-bold text-primary">{tier.price}</span>
+                    {tier.setupFee && <span className="text-sm text-muted-foreground">{tier.setupFee}</span>}
                     <span className="text-muted-foreground">{tier.period}</span>
                   </div>
                   <div className="text-sm text-muted-foreground">
-                    {tier.includedMins} included minutes
-                  </div>
-                  <div className="text-sm text-muted-foreground">
-                    Extra minutes: {tier.extraMinPrice}
+                    {tier.includedMins} mins, then {tier.extraMinPrice}
                   </div>
                 </div>
 
@@ -129,7 +131,7 @@ const pricingTiers = [
                   className={`w-full ${tier.popular ? 'btn-primary' : 'btn-outline'}`}
                   size="lg"
                 >
-                  {tier.name === 'Scale' ? 'Contact Sales' : 'Get Started'}
+                  {tier.cta}
                 </Button>
               </div>
             </div>
@@ -141,10 +143,10 @@ const pricingTiers = [
           <div className="bg-card p-8 rounded-xl shadow-card max-w-2xl mx-auto">
             <Zap className="w-12 h-12 text-accent mx-auto mb-4" />
             <h3 className="text-xl font-bold font-space-grotesk text-primary mb-3">
-              Enterprise-grade voice AI for modern commerce
+              AI phone support that works 24/7
             </h3>
             <p className="text-muted-foreground">
-              Join hundreds of businesses using Fieson to increase sales and reduce costs.
+              Join 1,600+ online stores using AI phone agents to automate customer support.
             </p>
           </div>
         </div>
