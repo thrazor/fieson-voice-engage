@@ -8,29 +8,20 @@ const TeamPage = () => {
   const teamMembers = [
     {
       name: "Bart Rosier",
-      role: "Co-Founder & CEO",
-      bio: "Former Shopify Plus engineer with 12+ years building scalable e-commerce infrastructure. Led voice AI initiatives at Meta and Google.",
-      linkedin: "https://www.linkedin.com/in/bartrosier/",
-      location: "Amsterdam, Netherlands",
-      expertise: ["Voice AI", "E-commerce", "Product Strategy"],
-      achievements: ["Scaled 500M+ GMV platforms", "50+ patents in conversational AI", "Forbes 30 Under 30"]
-    },
-    {
-      name: "Pankaj Kumar", 
-      role: "Co-Founder & CTO",
-      bio: "ML researcher specializing in real-time speech processing. Previously Staff Engineer at DeepMind, architecting low-latency voice systems.",
-      linkedin: "https://www.linkedin.com/in/pankaj4u4m/",
-      location: "London, United Kingdom", 
-      expertise: ["Machine Learning", "Speech Processing", "Infrastructure"],
-      achievements: ["PhD in Neural Speech Synthesis", "300ms voice latency breakthrough", "10+ Nature publications"]
+      role: "Founder & CEO",
+      bio: "Entrepreneur and growth expert who created the 'Dutch Tesla on Two Wheels' (Etergo AppScooter) - acquired by Ola Electric with 880k+ units sold and $5B IPO. Currently Managing Director for International Expansion at Peakora and running Rosier Services as fractional CXO/consultant.",
+      linkedin: "https://ch.linkedin.com/in/bartrosier/",
+      location: "Zurich, Switzerland",
+      expertise: ["E-commerce Growth", "Product Strategy", "International Expansion"],
+      achievements: ["Founded & exited Etergo to Ola Electric", "880k+ electric scooters sold", "Expertise in B2B/B2C strategy & growth"]
     }
   ];
 
   const companyStats = [
-    { label: "Founded", value: "2023", icon: Calendar },
-    { label: "Team Size", value: "12", icon: Users },
-    { label: "Languages Supported", value: "30+", icon: Zap },
-    { label: "Customer Success Rate", value: "97%", icon: Trophy }
+    { label: "Founded", value: "2024", icon: Calendar },
+    { label: "Team Size", value: "1", icon: Users },
+    { label: "Focus", value: "AI Voice", icon: Zap },
+    { label: "Vision", value: "Global", icon: Trophy }
   ];
 
   return (
@@ -51,12 +42,12 @@ const TeamPage = () => {
       <section className="py-20 bg-gradient-to-br from-primary via-primary/90 to-primary/80">
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-6xl font-bold font-space-grotesk text-white mb-6">
-            Meet the team behind
+            Meet the founder behind
             <span className="text-accent block">the voice AI revolution</span>
           </h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto mb-12">
-            Two founders with a combined 20+ years in AI and e-commerce, 
-            on a mission to transform how businesses connect with customers through voice.
+            Building the future of customer interaction through intelligent voice AI, 
+            with proven experience in scaling tech products to global success.
           </p>
           
           {/* Company Stats */}
@@ -79,16 +70,16 @@ const TeamPage = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold font-space-grotesk text-primary mb-6">
-              World-class expertise in voice AI
+              Proven entrepreneurial expertise
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Our founding team combines deep technical expertise with real-world e-commerce experience.
+              Leading Fieson with real-world experience in building and scaling innovative tech products.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          <div className="flex justify-center max-w-6xl mx-auto">
             {teamMembers.map((member, index) => (
-              <Card key={index} className="overflow-hidden shadow-card hover-lift">
+              <Card key={index} className="overflow-hidden shadow-card hover-lift max-w-md">
                 <div className="relative">
                   {/* Background Pattern */}
                   <div className="h-32 bg-gradient-to-br from-primary to-accent"></div>
@@ -182,7 +173,7 @@ const TeamPage = () => {
                 "Traditional customer service doesn't scale with modern e-commerce. 
                 We're not just automating calls — we're reimagining what customer connection means."
               </blockquote>
-              <div className="text-accent font-medium mt-4">— Bart & Pankaj, Co-Founders</div>
+              <div className="text-accent font-medium mt-4">— Bart Rosier, Founder</div>
             </div>
           </div>
         </div>
