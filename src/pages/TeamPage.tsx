@@ -3,6 +3,8 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Linkedin, MapPin, Calendar, Users, Trophy, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
+import bartProfile from "@/assets/bart-profile.jpg";
+import pankajProfile from "@/assets/pankaj-profile.jpg";
 
 const TeamPage = () => {
   const teamMembers = [
@@ -13,7 +15,8 @@ const TeamPage = () => {
       linkedin: "https://ch.linkedin.com/in/bartrosier/",
       location: "Zurich, Switzerland",
       expertise: ["E-commerce Growth", "Product Strategy", "International Expansion"],
-      achievements: ["Founded & exited Etergo to Ola Electric", "880k+ electric scooters sold", "Expertise in B2B/B2C strategy & growth"]
+      achievements: ["Founded & exited Etergo to Ola Electric", "880k+ electric scooters sold", "Expertise in B2B/B2C strategy & growth"],
+      image: bartProfile
     },
     {
       name: "Pankaj Kumar",
@@ -22,7 +25,8 @@ const TeamPage = () => {
       linkedin: "https://www.linkedin.com/in/pankaj4u4m/",
       location: "India",
       expertise: ["Software Engineering", "AI/ML", "System Architecture"],
-      achievements: ["Full-stack development expertise", "Experience in AI/ML applications", "Scalable system design"]
+      achievements: ["Full-stack development expertise", "Experience in AI/ML applications", "Scalable system design"],
+      image: pankajProfile
     }
   ];
 
@@ -95,13 +99,13 @@ const TeamPage = () => {
                   
                   {/* Profile Content */}
                   <div className="p-8 -mt-16 relative">
-                    {/* Avatar Placeholder */}
-                    <div className="w-24 h-24 bg-white rounded-full shadow-lg border-4 border-white mb-6 flex items-center justify-center">
-                      <div className="w-20 h-20 bg-muted rounded-full flex items-center justify-center">
-                        <span className="text-2xl font-bold text-primary">
-                          {member.name.split(' ').map(n => n[0]).join('')}
-                        </span>
-                      </div>
+                    {/* Profile Image */}
+                    <div className="w-24 h-24 bg-white rounded-full shadow-lg border-4 border-white mb-6 overflow-hidden">
+                      <img 
+                        src={member.image} 
+                        alt={`${member.name} profile`}
+                        className="w-full h-full object-cover"
+                      />
                     </div>
 
                     {/* Name & Role */}
