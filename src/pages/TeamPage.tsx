@@ -8,18 +8,27 @@ const TeamPage = () => {
   const teamMembers = [
     {
       name: "Bart Rosier",
-      role: "Founder & CEO",
+      role: "Co-Founder & CEO",
       bio: "Entrepreneur and growth expert who created the 'Dutch Tesla on Two Wheels' (Etergo AppScooter) - acquired by Ola Electric with 880k+ units sold and $5B IPO. Currently Managing Director for International Expansion at Peakora and running Rosier Services as fractional CXO/consultant.",
       linkedin: "https://ch.linkedin.com/in/bartrosier/",
       location: "Zurich, Switzerland",
       expertise: ["E-commerce Growth", "Product Strategy", "International Expansion"],
       achievements: ["Founded & exited Etergo to Ola Electric", "880k+ electric scooters sold", "Expertise in B2B/B2C strategy & growth"]
+    },
+    {
+      name: "Pankaj Kumar",
+      role: "Co-Founder & CTO",
+      bio: "Software engineer and technology leader with extensive experience in building scalable systems and AI applications. Passionate about creating innovative solutions that solve real-world problems.",
+      linkedin: "https://www.linkedin.com/in/pankaj4u4m/",
+      location: "India",
+      expertise: ["Software Engineering", "AI/ML", "System Architecture"],
+      achievements: ["Full-stack development expertise", "Experience in AI/ML applications", "Scalable system design"]
     }
   ];
 
   const companyStats = [
     { label: "Founded", value: "2024", icon: Calendar },
-    { label: "Team Size", value: "1", icon: Users },
+    { label: "Team Size", value: "2", icon: Users },
     { label: "Focus", value: "AI Voice", icon: Zap },
     { label: "Vision", value: "Global", icon: Trophy }
   ];
@@ -42,12 +51,12 @@ const TeamPage = () => {
       <section className="py-20 bg-gradient-to-br from-primary via-primary/90 to-primary/80">
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-6xl font-bold font-space-grotesk text-white mb-6">
-            Meet the founder behind
+            Meet the team behind
             <span className="text-accent block">the voice AI revolution</span>
           </h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto mb-12">
-            Building the future of customer interaction through intelligent voice AI, 
-            with proven experience in scaling tech products to global success.
+            Two founders with complementary expertise in business growth and technology, 
+            on a mission to transform how businesses connect with customers through voice AI.
           </p>
           
           {/* Company Stats */}
@@ -70,16 +79,16 @@ const TeamPage = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold font-space-grotesk text-primary mb-6">
-              Proven entrepreneurial expertise
+              Complementary expertise in business & technology
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Leading Fieson with real-world experience in building and scaling innovative tech products.
+              Our founding team combines proven business growth expertise with deep technical knowledge.
             </p>
           </div>
 
-          <div className="flex justify-center max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {teamMembers.map((member, index) => (
-              <Card key={index} className="overflow-hidden shadow-card hover-lift max-w-md">
+              <Card key={index} className="overflow-hidden shadow-card hover-lift">
                 <div className="relative">
                   {/* Background Pattern */}
                   <div className="h-32 bg-gradient-to-br from-primary to-accent"></div>
@@ -173,7 +182,7 @@ const TeamPage = () => {
                 "Traditional customer service doesn't scale with modern e-commerce. 
                 We're not just automating calls — we're reimagining what customer connection means."
               </blockquote>
-              <div className="text-accent font-medium mt-4">— Bart Rosier, Founder</div>
+              <div className="text-accent font-medium mt-4">— Bart & Pankaj, Co-Founders</div>
             </div>
           </div>
         </div>
