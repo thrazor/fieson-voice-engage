@@ -33,10 +33,18 @@ const Navigation = () => {
         </nav>
 
         <div className="flex items-center gap-4">
-          <Button variant="outline" size="sm">
+          <Button 
+            variant="outline" 
+            size="sm"
+            onClick={() => window.open('https://cal.com/bart-rosier/session-bart', '_blank')}
+          >
             Book a demo
           </Button>
-          <Button size="sm" className="btn-primary">
+          <Button 
+            size="sm" 
+            className="btn-primary"
+            onClick={() => window.open('https://cal.com/bart-rosier/session-bart', '_blank')}
+          >
             Get started
           </Button>
         </div>

@@ -41,6 +41,7 @@ const FinalCTASection = () => {
             <Button 
               size="lg" 
               className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-10 py-4 h-auto font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5"
+              onClick={() => window.open('https://cal.com/bart-rosier/session-bart', '_blank')}
             >
               <Phone className="w-5 h-5 mr-2" />
               Get started today
@@ -49,6 +50,7 @@ const FinalCTASection = () => {
             <Button 
               size="lg" 
               className="bg-transparent text-white border-2 border-white hover:bg-white hover:text-primary text-lg px-10 py-4 h-auto font-semibold transition-all duration-300"
+              onClick={() => window.open('https://cal.com/bart-rosier/session-bart', '_blank')}
             >
               Book a demo
             </Button>

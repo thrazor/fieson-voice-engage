@@ -33,12 +33,14 @@ const HeroSection = () => {
             <Button 
               size="lg" 
               className="btn-primary text-lg px-10 py-4 h-auto"
+              onClick={() => window.open('https://cal.com/bart-rosier/session-bart', '_blank')}
             >
               Get started
             </Button>
             <Button 
               size="lg" 
               className="btn-secondary text-lg px-10 py-4 h-auto"
+              onClick={() => window.open('https://cal.com/bart-rosier/session-bart', '_blank')}
             >
               Book a demo
             </Button>
